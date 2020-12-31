@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "CAP-SU-late",
+	"version": "1.0",
+	"description": "Simplify calculation of CAP when considering S/U.",
+	"content_scripts": [
+		{
+			"matches": ["*://myedurec.nus.edu.sg/*"],
+			"js": ["cap.js"]
+		}
+	],
+	"author": "Hu Jialun"
+}

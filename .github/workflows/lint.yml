@@ -1,0 +1,11 @@
+name: Lint JavaScript with ESLint
+on: [push, pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install ESLint
+      run: npm install eslint eslint-plugin-import eslint-config-airbnb
+    - name: Run ESLint
+      run: npx eslint .
